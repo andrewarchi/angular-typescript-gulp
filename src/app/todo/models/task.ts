@@ -1,9 +1,8 @@
 export class Task {
 
-    constructor(public name:string, public done:boolean) {
-    }
+  constructor(public name: string, public done: boolean) { }
 
-    toggleDone() {
-        this.done = !this.done;
-    }
+  toggleDone() {
+    this.done = !this.done;
+  }
 }
