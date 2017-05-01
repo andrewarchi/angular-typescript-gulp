@@ -10,7 +10,7 @@ const tslint = require('gulp-tslint');
 /**
  * Remove build directory.
  */
-gulp.task('clean', (cb) => {
+gulp.task('clean', cb => {
   return del(['build'], cb);
 });
 
@@ -33,7 +33,7 @@ gulp.task('compile', ['tslint'], () => {
     .pipe(sourcemaps.init())
     .pipe(tsProject());
   return tsResult.js
-    .pipe(sourcemaps.write('.', {sourceRoot: '/src'}))
+    .pipe(sourcemaps.write('.', { sourceRoot: '/src' }))
     .pipe(gulp.dest('build'));
 });
 
@@ -57,19 +57,19 @@ gulp.task('libs', () => {
       'rxjs/**/*.js',
       'zone.js/dist/**',
       '@angular/**/bundles/**'
-    ], {cwd: 'node_modules/**'}) /* Glob required here. */
+    ], { cwd: 'node_modules/**' }) /* Glob required here. */
     .pipe(gulp.dest('build/lib'));
 });
 
 /**
  * Watch for changes in TypeScript, HTML and CSS files.
  */
-gulp.task('watch', function () {
-  gulp.watch(['src/**/*.ts'], ['compile']).on('change', function (e) {
-    console.log('TypeScript file ' + e.path + ' has been changed. Compiling.');
+gulp.task('watch', () => {
+  gulp.watch(['src/**/*.ts'], ['compile']).on('change', e => {
+    console.log(`TypeScript file ${e.path} has been changed. Compiling.`);
   });
-  gulp.watch(['src/**/*.html', 'src/**/*.css'], ['resources']).on('change', function (e) {
-    console.log('Resource file ' + e.path + ' has been changed. Updating.');
+  gulp.watch(['src/**/*.html', 'src/**/*.css'], ['resources']).on('change', e => {
+    console.log(`Resource file ${e.path} has been changed. Updating.`);
   });
 });
 
