@@ -1,7 +1,7 @@
-Angular2 with TypeScript and Gulp
+Angular with TypeScript and Gulp
 =================================
 
-A basic Angular2 application with Gulp as build system.
+A basic Angular application with Gulp as build system.
 
 #### 1. Prerequisites
 
@@ -21,7 +21,7 @@ A basic Angular2 application with Gulp as build system.
 
 - typescript
 
-> npm i -g typescript@2.0.2
+> npm i -g typescript@2.3.2
 
 - ts-node
 
@@ -31,7 +31,7 @@ A basic Angular2 application with Gulp as build system.
 
 Clone the repository:
 
-> git clone https://github.com/kolorobot/angular2-typescript-gulp.git
+> git clone https://github.com/andrewarchi/angular2-typescript-gulp.git
 
 Navigate to `angular2-typescript-gulp` directory:
 
