@@ -22,7 +22,9 @@ gulp.task('tslint', () => {
     .pipe(tslint({
       formatter: 'prose'
     }))
-    .pipe(tslint.report());
+    .pipe(tslint.report({
+      emitError: false
+    }));
 });
 
 /**
