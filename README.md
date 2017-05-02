@@ -31,11 +31,11 @@ A basic Angular application with Gulp as build system.
 
 Clone the repository:
 
-> git clone https://github.com/andrewarchi/angular2-typescript-gulp.git
+> git clone https://github.com/andrewarchi/angular-typescript-gulp.git
 
-Navigate to `angular2-typescript-gulp` directory:
+Navigate to `angular-typescript-gulp` directory:
 
-> cd angular2-typescript-gulp
+> cd angular-typescript-gulp
 
 #### 3. Installing dependencies
 
