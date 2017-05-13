@@ -10,7 +10,7 @@ export class TaskComponent {
   @Input() task: Task;
   @Output() statusChanged: any = new EventEmitter<any>();
 
-  toggleDone() {
+  toggleDone(): void {
     this.task.toggleDone();
     this.statusChanged.emit(null);
   }

@@ -4,7 +4,6 @@ import { Task } from '../models/task';
 
 @Injectable()
 export class TaskService {
-
   private tasks: Array<Task> = [
     new Task('Task 1', false),
     new Task('Task 2', false),
@@ -17,8 +16,7 @@ export class TaskService {
     return this.tasks;
   }
 
-  addTask(name: string) {
+  addTask(name: string): void {
     this.tasks.push(new Task(name, false));
   }
-
 }

@@ -21,15 +21,15 @@ export class TaskListComponent implements OnInit {
     this.calculateTodoCount();
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     console.log(`Todo component initialized with ${this.tasks.length} tasks.`);
   }
 
-  calculateTodoCount() {
+  calculateTodoCount(): void {
     this.todoCount = this.tasks.filter(t => !t.done).length;
   }
 
-  select(task: Task) {
+  select(task: Task): void {
     this.selectedTask = task;
   }
 }

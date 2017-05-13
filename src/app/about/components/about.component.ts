@@ -4,8 +4,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app/about/components/about.html'
 })
 export class AboutComponent implements OnInit {
-
-  ngOnInit() {
+  ngOnInit(): void {
 
   }
 }
