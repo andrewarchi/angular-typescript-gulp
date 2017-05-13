@@ -16,12 +16,11 @@ export class TaskListComponent implements OnInit {
   selectedTask: Task;
   tasks: Array<Task>;
 
-  constructor(private _taskService: TaskService) {
-    this.tasks = _taskService.getTasks();
-    this.calculateTodoCount();
-  }
+  constructor(private _taskService: TaskService) { }
 
   ngOnInit(): void {
+    this.tasks = this._taskService.getTasks();
+    this.calculateTodoCount();
     console.log(`Todo component initialized with ${this.tasks.length} tasks.`);
   }
 
